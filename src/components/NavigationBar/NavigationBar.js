@@ -22,7 +22,7 @@ const NavigationBar = ({ onSearchClick }) => {
         <div className="d-flex fullwidth">
           <input
             type="text"
-            placeholder="Buscar produtos, marcas e muito mais..."
+            placeholder="Buscar productos, marcas y más..."
             onChange={handleSearchChange}
           />
           <button className="cursor-pointer" onClick={handleSearchClick}>

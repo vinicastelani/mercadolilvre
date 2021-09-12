@@ -1,6 +1,6 @@
 import { useParams, useLocation } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
-import { useSelector,useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { incrementByAmount } from '../../components/Breadcrumbs/features/updateBreadcrumbs'
 import axios from 'axios'
 
@@ -8,7 +8,7 @@ import ItemView from '../../components/ItemView/ItemView'
 
 const Search = () => {
   const dispatch = useDispatch()
-  const breadrumbs = useSelector((state) => state.breadcrumbs.value)
+
   const { query } = useParams()
   const location = useLocation()
   let [searchItems, setSearchItems] = useState([''])
@@ -33,7 +33,7 @@ const Search = () => {
         )
       })
       .catch((e) => console.log(e))
-  }, [query])
+  }, [])
 
   return (
     <div>
