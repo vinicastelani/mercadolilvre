@@ -1,0 +1,28 @@
+$sm: 8px;
+$md: 16px;
+$lg: 32px;
+
+.px-1{
+    padding-left: $sm;
+    padding-right: $sm;
+}
+.px-2{
+    padding-left: $md;
+    padding-right: $md;
+}
+.px-3{
+    padding-left: $lg;
+    padding-right: $lg;
+}
+.py-1{
+    padding-top: $sm;
+    padding-bottom: $sm;
+}
+.py-2{
+    padding-top: $md;
+    padding-bottom: $md;
+}
+.py-3{
+    padding-top: $lg;
+    padding-bottom: $lg;
+}

@@ -1,0 +1,28 @@
+$yellow_theme: #FFE600;
+$ligth_gray_theme: #EEEEEE;
+$medium_gray_theme: #999999;
+$gray_theme: #666666;
+$dark_gray_theme: #333333;
+
+html,body{
+    background:$ligth_gray_theme;
+}
+.white_theme{
+    background: #FFF;
+}
+.yellow_theme{
+    background: $yellow_theme;
+}
+.ligth_gray_theme{
+    background: $ligth_gray_theme;
+}
+.medium_gray_theme{
+    background: $medium_gray_theme;
+}
+.dark_gray_theme{
+    background: $dark_gray_theme;
+}
+
+.gray_color{
+    color: $gray_theme;
+}

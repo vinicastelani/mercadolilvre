@@ -1,0 +1,13 @@
+
+@import "./misc.scss";
+@import "./spacing.scss";
+@import "./colors.scss";
+@import "./grid.scss";
+@import "./flex.scss";
+@import "./typography.scss";
+
+html,body,figure{
+    margin: 0;
+    width: 100%;
+}
+

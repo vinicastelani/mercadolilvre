@@ -1,0 +1,27 @@
+$yellow_theme: #FFE600;
+$ligth_gray_theme: #EEEEEE;
+$medium_gray_theme: #999999;
+$dark_gray_theme: #333333;
+//
+$sm: 14px;
+$md: 18px;
+$lg: 24px;
+$xlg: 46px;
+
+p{
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.font-size-1{
+    font-size: $sm;
+}
+.font-size-2{
+    font-size: $md;
+}
+.font-size-3{
+    font-size: $lg;
+}
+.font-size-4{
+    font-size: $xlg;
+}

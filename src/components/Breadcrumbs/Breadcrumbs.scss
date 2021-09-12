@@ -1,0 +1,14 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    font-family: Helvetica;
+    color: #666;
+    padding: 0 2px;
+}
+li:not(:last-child)::after{
+    content: " > "
+}

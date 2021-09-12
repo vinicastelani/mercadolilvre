@@ -1,0 +1,27 @@
+.product-image{
+    width:180px;
+    height:180px;
+    border-radius: 4px;
+}
+.item{
+    border-bottom: solid 1px #EEEEEE;
+}
+
+.item-price,
+.item-description,
+.item-seller-locale{
+    font-family: Helvetica;
+    color: #333;
+    font-weight: 300;
+}
+
+.item-price{
+    font-size: 24px;
+}
+.item-description{
+    font-size: 18px;
+}
+.item-seller-locale{
+    font-size: 12px;
+    text-align: end;
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Route, Switch, useHistory } from "react-router-dom";
+
+
+import Navigation from "./components/NavigationBar/NavigationBar"
+import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs"
+import Search from "./views/Search/Search"
+import Item from "./views/Item/Item"
+import "./utils/main.scss"
+
 
 function App() {
+  const history = useHistory();
+
+  const handleSearchClick = (e) =>{
+    if(!e.length) return
+    history.push(`/items/search/${e}`)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Navigation onSearchClick={handleSearchClick}/>
+    <Breadcrumbs/>
+    <Switch>
+      <Route path="/items/search/:query">
+        <Search></Search>
+      </Route>
+      <Route path="/items/:id">
+        <Item></Item>
+      </Route>
+    </Switch>
+    {/* <Home/> */}
     </div>
   );
 }
