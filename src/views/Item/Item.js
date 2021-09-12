@@ -40,7 +40,7 @@ const Item = () => {
       .get(`https://api.mercadolibre.com/items/${id}/description`)
       .then((response) => setItemDescription(response.data))
       .catch((e) => e)
-  }, [])
+  }, [])// eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="container">
       <div className="d-flex justify-space-between white_theme fullwidth px-3 py-3">
