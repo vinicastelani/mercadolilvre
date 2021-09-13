@@ -18,7 +18,7 @@ const Search = () => {
     axios
       .get(`https://api.mercadolibre.com/sites/MLA/search?q=${query}`)
       .then((response) => {
-        setSearchItems(response.data.results)
+        setSearchItems(response.data.results.splice(0,4))
         dispatch(
           incrementByAmount([
             {
@@ -37,7 +37,7 @@ const Search = () => {
 
   return (
     <div>
-      <div className="container px-3">
+      <div className="container px-3 pb-3">
         {searchItems.map((item) => (
           <ItemView data={item} key={Math.floor(Math.random() * 1e6)} />
         ))}

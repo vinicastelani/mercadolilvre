@@ -19,6 +19,7 @@ const Item = () => {
     return str.charAt(0).toUpperCase() + str.slice(1)
   }
 
+  //useEffect realiza o request assim que a view é aberta
   useEffect(() => {
     axios
       .get(`https://api.mercadolibre.com/items/${id}`)
