@@ -14,6 +14,11 @@ const NavigationBar = ({ onSearchClick }) => {
   const handleSearchClick = () => {
     onSearchClick(search)
   }
+  
+  const handleKeyPress = (e) => {
+    if(e.key != "Enter")return
+    onSearchClick(search)
+  }
 
   return (
     <div className="yellow_theme">
@@ -24,6 +29,7 @@ const NavigationBar = ({ onSearchClick }) => {
             type="text"
             placeholder="Buscar productos, marcas y más..."
             onChange={handleSearchChange}
+            onKeyPress={handleKeyPress}
           />
           <button className="cursor-pointer" onClick={handleSearchClick}>
             <img src={searchImg} alt="Search button" className="px-2" />
